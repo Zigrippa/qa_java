@@ -1,28 +1,16 @@
 package com.example;
 
-import junit.framework.TestCase;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 
-@RunWith(MockitoJUnitRunner.class)
-public class FelineTest extends TestCase {
 
-    @Mock
-    Feline mock;
+public class FelineTest {
+
 
     Feline feline = new Feline();
-
-    @Test
-    public void testEatMeat() throws Exception {
-        mock.eatMeat();
-        Mockito.verify(mock, Mockito.times(1)).eatMeat();
-    }
 
     @Test
     public void testGetFoodInEatMeat() throws Exception {
